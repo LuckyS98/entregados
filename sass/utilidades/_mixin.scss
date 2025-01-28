@@ -1,0 +1,9 @@
+@mixin reset ( $margin , $padding){
+    *{margin: $margin;
+    padding: $padding;
+    } 
+}
+@mixin medidas($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
