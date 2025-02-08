@@ -1,26 +1,116 @@
 @import "utilidades/listas";
 @import "utilidades/mixin";
 
-*{@include reset(0,0);flex-wrap: nowrap;}
-p{color: nth($list-colors, 3 ) } 
-.fondo-inicio {background-image: url(../img/fondo.jpg);
-    background-repeat: no-repeat; background-size: cover;}
-    .fondo-ofertas {background-image: url(../img/ofertas.jpg);background-repeat: no-repeat;background-size: cover;}
-    .fondo-destino {background-image: url(../img/paises.jpg);
-    background-size: cover;background-repeat: no-repeat;}
-    .fondo-contacto{background-image: url(../img/contacto.jpg);background-repeat: no-repeat;background-size: cover;}
-header{text-align: center;
+*{@include reset(0,0);
+    flex-wrap: nowrap;}
+p{
+    color: nth($list-colors, 3 );
+    font-size:1.5rem;
+} 
+.fondo-inicio {
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;}
+.fondo-ofertas {
+    background-image: url(../img/ofertas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;}
+.fondo-destino {
+    background-image: url(../img/paises.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;}
+.fondo-contacto{
+    background-image: url(../img/contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;}
+header{
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     display: inline-block;}
- li {list-style: none; color: nth($list-colors , 3 ); font-family: nth($list-fonts, 3); font-size:x-large;}
-.oferta{text-align:end;}
+ li {
+    list-style: none; 
+    color: nth($list-colors , 3 );
+    font-family: nth($list-fonts, 3); 
+    font-size:x-large;}
+.oferta{
+    text-align:end;}
 article{  @include medidas (100,100) ;}
- h2{text-align: center;text-decoration: underline; font-family: nth($list-fonts, 3);}
-.logo { width: 30px; margin: 5px; position: absolute; width: 30px;}
-.off{margin: 10px; padding: 10px; border: 1px solid black; border-radius: 10px; background-color: rgba(0,0,0,0.5); color: white; width: 300px; height: 300px;  flex-direction: column-reverse;  align-items: center;}
-.off:hover{background-color: rgba(0,0,0,0.8);}
-section{margin: 15px; padding: 12px; border: 1px solid black; border-radius: 10px; background-color: rgba(0,0,0,0.5); color: white;font-family: nth($list-fonts, 3); }
-footer{background-color: rgb(0, 0, 0); color: white; text-align: center; padding: 10px; align-items: end;
-p {color: rgb(255, 0, 0); font-size: 12px; font-family: nth($list-fonts, 3);}}
-main section article{ margin: 5px; padding: 5px;font-family: nth($list-fonts, 3); display: flex; flex-direction: column; align-items: center;}
-h2{text-decoration: none;}
+ h2{
+    text-align: center;
+    text-decoration: underline;
+    font-family: nth($list-fonts, 3);}
+.logo {
+    width: 30px; 
+    margin: 5px; 
+    position: absolute; 
+    width: 30px;}
+.off{
+    border: 2px solid rgba(255, 11, 11, 0.726);
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.5); 
+    width: 300px; 
+    width: 300px;
+    display: inline-table;
+    align-items: center;  
+    }
+.off:hover{
+    background-color: rgba(32, 4, 4, 0.8);}
+section{
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid rgb(5, 5, 5);
+    border-radius: 10px; 
+    background-color: rgba(0,0,0,0.5); 
+    color: white;
+    font-weight: bold;
+    font-family: nth($list-fonts, 3);
+     }
+     .destinos {  margin: 15px;
+        padding: 15px;
+        border: 2px solid rgb(5, 5, 5);
+        border-radius: 10px; 
+        background-color: rgba(187, 193, 230, 0.5); 
+        color: white;
+        font-weight: bold;
+        font-family: nth($list-fonts, 3);
+         }
+footer{
+    background-color: rgb(0, 0, 0);
+    color: white; 
+    text-align: center; 
+    margin-top: 40px;
+    padding:10px; 
+    align-items: end;
+p {
+    color: rgb(2, 1, 1); 
+    font-size: 12px;background-color: rgb(20, 29, 29);
+    padding: .2rem .7rem;
+    justify-content: center;
+    align-items: center; 
+    font-size: 2rem; 
+    font-weight: bold;}}
+main section article { 
+    margin: 5px; 
+    padding: 5px;
+    font-family: nth($list-fonts, 3);
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;}
+h2{
+    text-decoration: none;}
+.contacto{
+    font-weight: bolder;
+    font-size:2rem;
+}  
+ li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgba(24, 100, 161, 0.5);
+    padding: 5px;
+    border-radius: 10px;
+    margin: 35px;
+    display: inline-table;
+    align-items: center;
+    justify-content: center;}

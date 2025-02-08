@@ -8,6 +8,7 @@
 
 p {
   color: rgb(0, 0, 0);
+  font-size: 1.5rem;
 }
 
 .fondo-inicio {
@@ -70,29 +71,38 @@ h2 {
 }
 
 .off {
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid black;
+  border: 2px solid rgba(255, 11, 11, 0.726);
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
   width: 300px;
-  height: 300px;
-  flex-direction: column-reverse;
+  width: 300px;
+  display: inline-table;
   align-items: center;
 }
 
 .off:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(32, 4, 4, 0.8);
 }
 
 section {
   margin: 15px;
-  padding: 12px;
-  border: 1px solid black;
+  padding: 15px;
+  border: 2px solid rgb(5, 5, 5);
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
+  font-weight: bold;
+  font-family: "Times New Roman";
+}
+
+.destinos {
+  margin: 15px;
+  padding: 15px;
+  border: 2px solid rgb(5, 5, 5);
+  border-radius: 10px;
+  background-color: rgba(187, 193, 230, 0.5);
+  color: white;
+  font-weight: bold;
   font-family: "Times New Roman";
 }
 
@@ -100,13 +110,19 @@ footer {
   background-color: rgb(0, 0, 0);
   color: white;
   text-align: center;
+  margin-top: 40px;
   padding: 10px;
   align-items: end;
 }
 footer p {
-  color: rgb(255, 0, 0);
+  color: rgb(2, 1, 1);
   font-size: 12px;
-  font-family: "Times New Roman";
+  background-color: rgb(20, 29, 29);
+  padding: 0.2rem 0.7rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 main section article {
@@ -120,6 +136,25 @@ main section article {
 
 h2 {
   text-decoration: none;
+}
+
+.contacto {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: rgba(24, 100, 161, 0.5);
+  padding: 5px;
+  border-radius: 10px;
+  margin: 35px;
+  display: inline-table;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
